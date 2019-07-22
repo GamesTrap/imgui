@@ -4,7 +4,6 @@ project "ImGui"
     cppdialect "C++17"
     staticruntime "on"
     systemversion "latest"
-    pic "on"
     
     targetdir ("../../bin/" .. outputdir .. "/%{prj.group}/%{prj.name}")
     objdir ("../../bin-int/" .. outputdir .. "/%{prj.group}/%{prj.name}")
