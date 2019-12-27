@@ -118,7 +118,7 @@ Officially maintained bindings (in repository):
 - Frameworks: Emscripten, Allegro5, Marmalade.
 
 Third-party bindings (see [Bindings](https://github.com/ocornut/imgui/wiki/Bindings/) page):
-- Languages: C, C#/.Net, ChaiScript, D, Go, Haxe/hxcpp, Java, JavaScript, Julia, Lua, Odin, Pascal, PureBasic, Python, Ruby, Rust, Swift...
+- Languages: C, C#/.Net, ChaiScript, D, Go, Haskell, Haxe/hxcpp, Java, JavaScript, Julia, Lua, Odin, Pascal, PureBasic, Python, Ruby, Rust, Swift...
 - Frameworks: Amethyst, bsf, Cinder, Cocos2d-x, Diligent Engine, Flexium, GML/GameMakerStudio2, Irrlicht, Ogre, OpenFrameworks, OpenSceneGraph/OSG, ORX, px_render, LÖVE+Lua, Magnum, NanoRT, Qt, QtDirect3D, SFML, Software Rasterizers, Unreal Engine 4...
 - Note that C bindings ([cimgui](https://github.com/cimgui/cimgui)) are auto-generated, you can use its json/lua output to generate bindings for other languages.
 
@@ -126,7 +126,7 @@ Also see [Wiki](https://github.com/ocornut/imgui/wiki) for more links and ideas.
 
 ### Upcoming Changes
 
-Some of the goals for 2019+ are:
+Some of the goals for 2019-2020 are:
 - Finish work on docking, tabs. (see [#2109](https://github.com/ocornut/imgui/issues/2109), in public [docking](https://github.com/ocornut/imgui/tree/docking) branch looking for feedback)
 - Finish work on multiple viewports / multiple OS windows. (see [#1542](https://github.com/ocornut/imgui/issues/1542), in public [docking](https://github.com/ocornut/imgui/tree/docking) branch looking for feedback)
 - Finish work on gamepad/keyboard controls. (see [#787](https://github.com/ocornut/imgui/issues/787))
@@ -155,7 +155,7 @@ See: [Wiki](https://github.com/ocornut/imgui/wiki) for many links, references, a
 
 See: [Articles about the IMGUI paradigm](https://github.com/ocornut/imgui/wiki#Articles-about-the-IMGUI-paradigm) to read/learn about the Immediate Mode GUI paradigm.
 
-If you are new to Dear ImGui and have issues with: compiling, linking, adding fonts, wiring inputs, running or displaying Dear ImGui: you can use [Discord server](https://discord.gg/NgJ4SEP) or [Discourse forums](https://discourse.dearimgui.org).
+If you are new to Dear ImGui and have issues with: compiling, linking, adding fonts, wiring inputs, running or displaying Dear ImGui: you can use [Discord server](http://discord.dearimgui.org).
 
 Otherwise, for any other questions, bug reports, requests, feedback, you may post on https://github.com/ocornut/imgui/issues. Please read and fill the New Issue template carefully.
 
@@ -176,7 +176,7 @@ How to help
 
 **How can I help?**
 
-- You may participate in the [Discord server](https://discord.gg/NgJ4SEP), [Discourse forums](https://discourse.dearimgui.org), GitHub [issues tracker](https://github.com/ocornut/imgui/issues).
+- You may participate in the [Discord server](http://discord.dearimgui.org), [GitHub forum/issues](https://github.com/ocornut/imgui/issues).
 - You may help with development and submit pull requests! Please understand that by submitting a PR you are also submitting a request for the maintainer to review your code and then take over its maintenance forever. PR should be crafted both in the interest in the end-users and also to ease the maintainer into understanding and accepting it.
 - See [Help wanted](https://github.com/ocornut/imgui/wiki/Help-Wanted) on the [Wiki](https://github.com/ocornut/imgui/wiki/) for some more ideas.
 - Have your company financially support this project.
@@ -201,9 +201,10 @@ Ongoing Dear ImGui development is financially supported by users and private spo
 *Platinum-chocolate sponsors*
 - Blizzard Entertainment
 - Google
+- Ubisoft
 
 *Double-chocolate sponsors*
-- Media Molecule, Mobigame, Aras Pranckevičius, Greggman, DotEmu, Nadeo, Supercell, Runner, Aiden Koss, Kylotonn.
+- Media Molecule, Mobigame, Aras Pranckevičius, Greggman, DotEmu, Nadeo, Supercell, Aiden Koss, Kylotonn.
 
 *Salty caramel supporters*
 - Remedy Entertainment, Next Level Games, Recognition Robotics, ikrima, Geoffrey Evans, Mercury Labs, Singularity Demo Group, Lionel Landwerlin, Ron Gilbert, Brandon Townsend, G3DVu, Cort Stratton, drudru, Harfang 3D, Jeff Roberts, Rainway inc, Ondra Voves, Mesh Consultants, Unit 2 Games, Neil Bickford, Bill Six, Graham Manders.
@@ -213,6 +214,10 @@ Ongoing Dear ImGui development is financially supported by users and private spo
 
 And all other past and present supporters; THANK YOU!
 (Please contact me if you would like to be added or removed from this list)
+
+Dear ImGui is using software and services kindly provided free of charge for open source projects:
+- [PVS-Studio](https://www.viva64.com/en/b/0570/) for static analysis.
+- [GitHub actions](https://github.com/features/actions) for continuous integration systems.
 
 Credits
 -------
