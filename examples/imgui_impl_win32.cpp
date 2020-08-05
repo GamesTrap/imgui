@@ -71,9 +71,9 @@ static void ImGui_ImplWin32_UpdateMonitors();
 // Functions
 bool    ImGui_ImplWin32_Init(void* hwnd)
 {
-    if (!::QueryPerformanceFrequency((LARGE_INTEGER *)&g_TicksPerSecond))
+    if (!::QueryPerformanceFrequency((LARGE_INTEGER*)&g_TicksPerSecond))
         return false;
-    if (!::QueryPerformanceCounter((LARGE_INTEGER *)&g_Time))
+    if (!::QueryPerformanceCounter((LARGE_INTEGER*)&g_Time))
         return false;
 
     // Setup back-end capabilities flags
@@ -306,7 +306,7 @@ void    ImGui_ImplWin32_NewFrame()
 
     // Setup time step
     INT64 current_time;
-    ::QueryPerformanceCounter((LARGE_INTEGER *)&current_time);
+    ::QueryPerformanceCounter((LARGE_INTEGER*)&current_time);
     io.DeltaTime = (float)(current_time - g_Time) / g_TicksPerSecond;
     g_Time = current_time;
 
@@ -506,7 +506,8 @@ void ImGui_ImplWin32_EnableDpiAwareness()
 float ImGui_ImplWin32_GetDpiScaleForMonitor(void* monitor)
 {
     UINT xdpi = 96, ydpi = 96;
-    if (IsWindows8Point1OrGreater())
+    static BOOL bIsWindows8Point1OrGreater = IsWindows8Point1OrGreater();
+    if (bIsWindows8Point1OrGreater)
     {
         static HINSTANCE shcore_dll = ::LoadLibraryA("shcore.dll"); // Reference counted per-process
         if (PFN_GetDpiForMonitor GetDpiForMonitorFn = (PFN_GetDpiForMonitor)::GetProcAddress(shcore_dll, "GetDpiForMonitor"))
